@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Eddie">
+    
+    <title>
+        
+            10.和小达一起学MySQL |
+        
+        Eddie&#39;s学习森林
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/tou.jpg">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/css/font-awesome.min.css">
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/tou.jpg","favicon":"/images/tou.jpg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"世界上绝大多数事情都没有太大意义,真理与爱除外"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fas fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                Eddie&#39;s学习森林
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                所有博客
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                笔记类别
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               target="_blank" rel="noopener" href="https://gitee.com/excellentcyd"
+                            >
+                                GITEE
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">所有博客</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">笔记类别</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       target="_blank" rel="noopener" href="https://gitee.com/excellentcyd">GITEE</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">10.和小达一起学MySQL</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/tou.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Eddie</span>
+                        
+                            <span class="author-label">Engineer</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-08-11 19:30:31</span>
+        <span class="mobile">2022-08-11 19:30</span>
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/MySQL/">MySQL</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>6.2k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>25 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h1 id="1-数据库的基本概念"><a href="#1-数据库的基本概念" class="headerlink" title="1.数据库的基本概念"></a>1.数据库的基本概念</h1><h3 id="1-1数据库的基本概念"><a href="#1-1数据库的基本概念" class="headerlink" title="1.1数据库的基本概念"></a>1.1数据库的基本概念</h3><h5 id="1-1-1什么是数据库"><a href="#1-1-1什么是数据库" class="headerlink" title="1.1.1什么是数据库"></a>1.1.1什么是数据库</h5><p>​	数据库是用来<strong>组织、存储、管理</strong>数据的仓库</p>
+<p>​	为了方便管理数据，就有了<strong>数据库管理系统</strong>的概念(简称：数据库)。用户可以对数据库中的数据进行<strong>新增、查询、更新、删除等</strong>操作</p>
+<h5 id="1-1-2常见的数据库和分类"><a href="#1-1-2常见的数据库和分类" class="headerlink" title="1.1.2常见的数据库和分类"></a>1.1.2常见的数据库和分类</h5><ul>
+<li>MySQL数据库（目前使用最广泛、流行度最高的开源免费数据库；Community + Enterprise） </li>
+<li>Oracle 数据库（收费）</li>
+<li>SQL Server 数据库（收费）</li>
+<li>Mongodb 数据库（Community + Enterprise）</li>
+</ul>
+<p><strong>传统型数据库（关系型数据库 or SQL数据库）：</strong>MySQL、Oracle、SQL Server，这三者设计理念相同，用法类似</p>
+<p><strong>新型数据库（非关系型数据库 or NoSQL数据库）：</strong>Mongodb，它在一定程度上弥补了传统型数据库的缺陷</p>
+<h5 id="1-1-3传统型数据库的组织结构"><a href="#1-1-3传统型数据库的组织结构" class="headerlink" title="1.1.3传统型数据库的组织结构"></a>1.1.3传统型数据库的组织结构</h5><p><strong>Excel</strong>，每个 Excel 中，数据的组织结构分别为<strong>工作簿、工作表、数据行、列</strong>这 4 大部分组成。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../pictures/Excel%E7%9A%84%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84.png"
+                      alt="Excel的组织结构"
+                ></p>
+<ol>
+<li>整个 Excel 叫做<strong>工作簿</strong></li>
+<li>users 和 books 是<strong>工作表</strong></li>
+<li>users 工作表中有 3 行数据，每行数据由 6 列信息组成</li>
+<li>每列信息都有对应的<strong>数据类型</strong></li>
+</ol>
+<p><strong>传统型数据库</strong>，数据的组织结构分为**数据库(database)、数据表(table)、数据行(row)、字段(field)**这 4 大部分组成。</p>
+<ol>
+<li><strong>数据库</strong>类似于 Excel 的<strong>工作簿</strong></li>
+<li><strong>数据表</strong>类似于 Excel 的<strong>工作表</strong></li>
+<li><strong>数据行</strong>类似于 Excel 的<strong>每一行数据</strong></li>
+<li><strong>字段</strong>类似于 Excel 的<strong>列</strong>，每个字段都有对应的数据类型</li>
+</ol>
+<p><strong>实际开发中库、表、行、字段的关系</strong></p>
+<ol>
+<li>在实际项目开发中，一般情况下，每个项目都对应独立的数据库。</li>
+<li>不同的数据，要存储到数据库的不同表中，例如：用户数据存储到 users 表中，图书数据存储到 books 表中</li>
+<li>每个表中具体存储哪些信息，由字段来决定，例如：我们可以为 users 表设计 id、username、password 这 3 个 字段</li>
+<li>表中的行，代表每一条具体的数据。</li>
+</ol>
+<h1 id="2-MySQL的基本使用"><a href="#2-MySQL的基本使用" class="headerlink" title="2.MySQL的基本使用"></a>2.MySQL的基本使用</h1><h3 id="2-1使用MySQL-Workbench管理数据库"><a href="#2-1使用MySQL-Workbench管理数据库" class="headerlink" title="2.1使用MySQL Workbench管理数据库"></a>2.1使用MySQL Workbench管理数据库</h3><h5 id="2-1-1连接数据库"><a href="#2-1-1连接数据库" class="headerlink" title="2.1.1连接数据库"></a>2.1.1连接数据库</h5><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../pictures/MYSQL01.png"
+                      alt="连接数据库"
+                ></p>
+<h5 id="2-1-2界面组成部分"><a href="#2-1-2界面组成部分" class="headerlink" title="2.1.2界面组成部分"></a>2.1.2界面组成部分</h5><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../pictures/MYSQL02.png"
+                      alt="界面组成部分"
+                ></p>
+<h5 id="2-1-3创建数据库"><a href="#2-1-3创建数据库" class="headerlink" title="2.1.3创建数据库"></a>2.1.3创建数据库</h5><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../pictures/MYSQL03.png"
+                      alt="创建数据库"
+                ></p>
+<h5 id="2-1-4创建数据表"><a href="#2-1-4创建数据表" class="headerlink" title="2.1.4创建数据表"></a>2.1.4创建数据表</h5><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../pictures/MYSQL04.png"
+                      alt="创建数据表"
+                ></p>
+<p><strong>DataType数据类型：</strong></p>
+<ol>
+<li><strong>INT</strong>整数</li>
+<li><strong>varchar(len)</strong> 字符串</li>
+<li>**tinyint(1) **布尔值</li>
+</ol>
+<p><strong>字段的特殊标识：</strong></p>
+<ol>
+<li><strong>PK</strong>（Primary Key）主键、唯一标识</li>
+<li><strong>NN</strong>（Not Null）值不允许为空</li>
+<li><strong>UQ</strong>（Unique）值唯一</li>
+<li><strong>AI</strong>（Auto Increment）值自动增长</li>
+</ol>
+<h5 id="2-1-5向表中写入数据"><a href="#2-1-5向表中写入数据" class="headerlink" title="2.1.5向表中写入数据"></a>2.1.5向表中写入数据</h5><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../pictures/MYSQL05.png"
+                      alt="向表中写入数据"
+                ></p>
+<h3 id="2-2使用SQL管理数据"><a href="#2-2使用SQL管理数据" class="headerlink" title="2.2使用SQL管理数据"></a>2.2使用SQL管理数据</h3><h5 id="2-2-1什么是SQL"><a href="#2-2-1什么是SQL" class="headerlink" title="2.2.1什么是SQL"></a>2.2.1什么是SQL</h5><p>SQL（Structured Query Language）是<strong>结构化查询语言</strong>，专门用来<strong>访问和处理数据库</strong>的<strong>编程语言</strong>。能够让 </p>
+<p>我们<strong>以编程的形式</strong>，<strong>操作数据库里面的数据</strong>。</p>
+<ol>
+<li>SQL 是一门<strong>数据库编程语言</strong></li>
+<li>使用 SQL 语言编写出来的代码，叫做 <strong>SQL 语句</strong></li>
+<li>SQL 语言只能在<strong>关系型数据库</strong>中使用（例如 MySQL、Oracle、SQL Server）。<strong>非关系型数据库</strong>（例如 Mongodb） <strong>不支持</strong> SQL 语言</li>
+</ol>
+<h5 id="2-2-2SQL可以做什么"><a href="#2-2-2SQL可以做什么" class="headerlink" title="2.2.2SQL可以做什么"></a>2.2.2SQL可以做什么</h5><ol>
+<li>从数据库中<strong>查询数据</strong></li>
+<li>向数据库中<strong>插入新的数据</strong></li>
+<li><strong>更新</strong>数据库中的数据</li>
+<li>从数据库<strong>删除数据</strong></li>
+<li>可以创建<strong>新数据库</strong></li>
+<li>可在数据库中创建<strong>新表</strong></li>
+<li>可在数据库中创建<strong>存储过程、视图</strong></li>
+<li>…</li>
+</ol>
+<h5 id="2-2-3查询-SELECT语句"><a href="#2-2-3查询-SELECT语句" class="headerlink" title="2.2.3查询 - SELECT语句"></a>2.2.3查询 - SELECT语句</h5><p>​	<strong>SELECT</strong>语句用于<strong>从表中查询数据</strong>，执行的结果被存储在<strong>结果表</strong>中</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 这是注释</span></span><br><span class="line"><span class="comment">-- 从 FROM 指定的表中，查询出所有的数据。</span></span><br><span class="line"><span class="comment">-- *号表示所有列</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> 表名称</span><br><span class="line"><span class="comment">-- 从 FROM 指定的表中，查询出指定 列名称（字段）的数据</span></span><br><span class="line"><span class="keyword">SELECT</span> 列名称 <span class="keyword">FROM</span> 表名称</span><br></pre></td></tr></table></figure>
+
+<p>​	<strong>注：</strong> SQL语句中的<strong>关键字</strong>对<strong>大小写不敏感</strong>。SELECT 等效于 select，FROM 等效于 from</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> users</span><br><span class="line"><span class="keyword">select</span> username <span class="keyword">from</span> users</span><br><span class="line"><span class="keyword">select</span> username,password <span class="keyword">from</span> users</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-2-4插入-INSERT-INTO"><a href="#2-2-4插入-INSERT-INTO" class="headerlink" title="2.2.4插入 - INSERT INTO"></a>2.2.4插入 - INSERT INTO</h5><p>​	<strong>INSERT INTO</strong> 语句用于向数据表中<strong>插入新的数据行</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 语法：向指定的表中，插入如下几列数据，列的值通过 VALUES 一一制定</span></span><br><span class="line"><span class="comment">-- 注意：列和值要一一对应，多个列和多个值之间使用英文,分隔</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> 表名(列<span class="number">1</span>，列<span class="number">2</span>，...) <span class="keyword">VALUES</span> (值<span class="number">1</span>，值<span class="number">2</span>，...)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> users(name,password) <span class="keyword">values</span>(<span class="string">&#x27;bob&#x27;</span>,<span class="string">&#x27;123456&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-2-5更新-UPDATE"><a href="#2-2-5更新-UPDATE" class="headerlink" title="2.2.5更新 - UPDATE"></a>2.2.5更新 - UPDATE</h5><p>​	<strong>UPDATE</strong> 语句用于<strong>修改</strong>表中的数据</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 1.用 UPDATE 指定要更新哪个表中的数据</span></span><br><span class="line"><span class="comment">-- 2.用 SET 指定列对应的新值</span></span><br><span class="line"><span class="comment">-- 3.用 WHERE 指定更新的条件</span></span><br><span class="line"><span class="keyword">UPDATE</span> 表名称 <span class="keyword">SET</span> 列名称<span class="operator">=</span>新值 <span class="keyword">WHERE</span> 某列名<span class="operator">=</span>某值</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> users <span class="keyword">set</span> password<span class="operator">=</span>&quot;8888&quot; <span class="keyword">where</span> id<span class="operator">=</span><span class="number">2</span></span><br><span class="line"><span class="comment">-- 多个更新之间用英文的,进行分隔</span></span><br><span class="line"><span class="comment">-- 一定记得加WHERE条件，否则整张表的数据都被更新</span></span><br><span class="line"><span class="keyword">update</span> users <span class="keyword">set</span> password<span class="operator">=</span><span class="string">&#x27;8888&#x27;</span>, status<span class="operator">=</span><span class="number">1</span> <span class="keyword">where</span> id<span class="operator">=</span><span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="2-2-6删除-DELETE-FROM"><a href="#2-2-6删除-DELETE-FROM" class="headerlink" title="2.2.6删除 - DELETE FROM"></a>2.2.6删除 - DELETE FROM</h5><p>​	<strong>DELETE</strong> 语句用于<strong>删除表中的行</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 从 FROM 指定的表中，根据 WHERE 条件，删除对应的数据行</span></span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> 表名称 <span class="keyword">WHERE</span> 列名称<span class="operator">=</span>值</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> <span class="keyword">user</span> <span class="keyword">where</span> id<span class="operator">=</span><span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="2-2-7-WHERE子句"><a href="#2-2-7-WHERE子句" class="headerlink" title="2.2.7 WHERE子句"></a>2.2.7 WHERE子句</h5><p>​	<strong>WHERE</strong> 子句用于<strong>限定选择的标准</strong>。在 SELECT、UPDATE、DELETE 语句中，皆可使用 WHERE 子句来限定选择的标准。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> 列名 <span class="keyword">FROM</span> 表名 <span class="keyword">WHERE</span> 列 运算符 值</span><br><span class="line"><span class="keyword">UPDATE</span> 表名 <span class="keyword">SET</span> 列<span class="operator">=</span>新值 <span class="keyword">WHERE</span> 列 运算符 值</span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> 表名 <span class="keyword">WHERE</span> 列 运算符 值</span><br></pre></td></tr></table></figure>
+
+<p>​	<strong>运算符</strong>可以为：&#x3D;、&gt;、&lt;、&gt;&#x3D;、&lt;&#x3D;、BETWEEN、LIKE、&lt;&gt;（不等于，有些SQL版本可以为 !&#x3D; ）</p>
+<h5 id="2-2-8-AND和OR运算符"><a href="#2-2-8-AND和OR运算符" class="headerlink" title="2.2.8 AND和OR运算符"></a>2.2.8 AND和OR运算符</h5><p>​	<strong>AND 和 OR</strong> 可在 WHERE 子语句中<strong>把两个或多个条件结合起来</strong></p>
+<ul>
+<li>AND 表示必须<strong>同时满足多个条件</strong>，相当于 JavaScript 中的 &amp;&amp; 运算符，例如 if (a !&#x3D;&#x3D; 10 &amp;&amp; a !&#x3D;&#x3D; 20)</li>
+<li>OR 表示<strong>只要满足任意一个条件即可</strong>，相当于 JavaScript 中的 || 运算符，例如 if(a !&#x3D;&#x3D; 10 || a !&#x3D;&#x3D; 20)</li>
+</ul>
+<h5 id="2-2-9-ORDER-BY子句"><a href="#2-2-9-ORDER-BY子句" class="headerlink" title="2.2.9 ORDER BY子句"></a>2.2.9 ORDER BY子句</h5><ul>
+<li><strong>ORDER BY</strong> 语句用于根据指定的列<strong>对结果集进行排序</strong>，默认<strong>升序</strong>，<strong>降序</strong>可以使用<strong>DESC</strong>关键字。</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 升序</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> users <span class="keyword">order</span> <span class="keyword">by</span> id</span><br><span class="line"><span class="comment">-- 降序</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> users <span class="keyword">order</span> <span class="keyword">by</span> id <span class="keyword">desc</span></span><br><span class="line"><span class="comment">-- 多重排序：先按照status降序，再按照name升序（asc语义性更明显）</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> users <span class="keyword">order</span> <span class="keyword">by</span> status <span class="keyword">desc</span>,name <span class="keyword">asc</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="2-2-10-COUNT-函数"><a href="#2-2-10-COUNT-函数" class="headerlink" title="2.2.10 COUNT(*)函数"></a>2.2.10 COUNT(*)函数</h5><p>​	<strong>COUNT(*)</strong> 函数用于<strong>返回查询结果的总数据条数</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">FROM</span> 表名称</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-3在项目中操作MySQL"><a href="#2-3在项目中操作MySQL" class="headerlink" title="2.3在项目中操作MySQL"></a>2.3在项目中操作MySQL</h3><h5 id="2-3-1安装与配置"><a href="#2-3-1安装与配置" class="headerlink" title="2.3.1安装与配置"></a>2.3.1安装与配置</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.初始化包管理配置文件</span></span><br><span class="line">init -y </span><br><span class="line"><span class="comment">//2.安装包的管理配置文件</span></span><br><span class="line">npm i install mysql</span><br><span class="line"></span><br><span class="line"><span class="comment">//3.配置mysql模块</span></span><br><span class="line"><span class="comment">//导入mysql模块</span></span><br><span class="line"><span class="keyword">const</span> mysql = <span class="built_in">require</span>(<span class="string">&#x27;mysql&#x27;</span>)</span><br><span class="line"><span class="comment">//建立与mysql数据库的连接</span></span><br><span class="line"><span class="keyword">const</span> db = mysql.<span class="title function_">createPool</span>(&#123;</span><br><span class="line">    <span class="attr">host</span>:<span class="string">&#x27;127.0.0.1&#x27;</span>,<span class="comment">//数据库的IP地址</span></span><br><span class="line">    <span class="attr">user</span>:<span class="string">&#x27;root&#x27;</span>,<span class="comment">//登录数据库的账号</span></span><br><span class="line">    <span class="attr">password</span>:<span class="string">&#x27;admin123&#x27;</span>,<span class="comment">//登录数据库的密码</span></span><br><span class="line">    <span class="attr">database</span>:<span class="string">&#x27;my_db_01&#x27;</span><span class="comment">//指定要操作哪个数据库</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//4.测试mysql模块是否能够正常工作</span></span><br><span class="line">db.<span class="title function_">query</span>(<span class="string">&#x27;SELECT 1&#x27;</span>,<span class="function">(<span class="params">err,results</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err) <span class="variable language_">console</span>.<span class="title function_">log</span>(err.<span class="property">message</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(results)<span class="comment">//只要能打印出[&#123;RowDataPacket&#123;&#x27;1&#x27;:1&#125;&#125;]，就说明数据库连接正常</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-3-2查询"><a href="#2-3-2查询" class="headerlink" title="2.3.2查询"></a>2.3.2查询</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询</span></span><br><span class="line"><span class="keyword">const</span> sqlStr1 = <span class="string">&#x27;select * from users&#x27;</span></span><br><span class="line">db.<span class="title function_">query</span>(sqlStr1,<span class="function">(<span class="params">err,results</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="comment">//查询失败</span></span><br><span class="line">    <span class="keyword">if</span>(err) <span class="keyword">return</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(err.<span class="property">message</span>)</span><br><span class="line">    <span class="comment">//查询成功</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(results)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-3-3插入"><a href="#2-3-3插入" class="headerlink" title="2.3.3插入"></a>2.3.3插入</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//插入新数据</span></span><br><span class="line"><span class="comment">//待执行的 SQL 语句，其中 ？ 表示占位符</span></span><br><span class="line"><span class="keyword">const</span> sqlStr2 = <span class="string">&#x27;INSERT INTO users(name,password) VALUES (?,?)&#x27;</span></span><br><span class="line"><span class="comment">//要插入到users表中的数据对象</span></span><br><span class="line"><span class="keyword">const</span> user2 = &#123;<span class="attr">name</span>:<span class="string">&#x27;sxk&#x27;</span>,<span class="attr">password</span>:<span class="string">&#x27;liuzzhh&#x27;</span>&#125;</span><br><span class="line"><span class="comment">//使用数组的形式，依次为 ？ 占位符指定具体的值</span></span><br><span class="line">db.<span class="title function_">query</span>(sqlStr2,[user2.<span class="property">name</span>,user2.<span class="property">password</span>],<span class="function">(<span class="params">err,results</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err) <span class="keyword">return</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(err.<span class="property">message</span>)<span class="comment">//失败</span></span><br><span class="line">    <span class="keyword">if</span>(results.<span class="property">affectedRows</span> === <span class="number">1</span>)&#123;<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;插入数据成功&#x27;</span>)&#125;<span class="comment">//成功</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//简易写法</span></span><br><span class="line"><span class="comment">//待执行的 SQL 语句，其中 ？ 表示占位符</span></span><br><span class="line"><span class="keyword">const</span> sqlStr2 = <span class="string">&#x27;INSERT INTO users SET ?&#x27;</span></span><br><span class="line"><span class="comment">//要插入到users表中的数据对象</span></span><br><span class="line"><span class="keyword">const</span> user2 = &#123;<span class="attr">name</span>:<span class="string">&#x27;sxk&#x27;</span>,<span class="attr">password</span>:<span class="string">&#x27;liuzzhh&#x27;</span>&#125;</span><br><span class="line"><span class="comment">//直接将数据对象当作占位符的值</span></span><br><span class="line">db.<span class="title function_">query</span>(sqlStr2,user2,<span class="function">(<span class="params">err,results</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err) <span class="keyword">return</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(err.<span class="property">message</span>)</span><br><span class="line">    <span class="keyword">if</span>(results.<span class="property">affectedRows</span> === <span class="number">1</span>)&#123;<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;插入数据成功&#x27;</span>)&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-3-4更新"><a href="#2-3-4更新" class="headerlink" title="2.3.4更新"></a>2.3.4更新</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//更新数据</span></span><br><span class="line"><span class="keyword">const</span> sqlStr3 = <span class="string">&#x27;UPDATE users SET name=?,password=? where id=?&#x27;</span></span><br><span class="line"><span class="keyword">const</span> user3 = &#123;<span class="attr">id</span>:<span class="number">26</span>,<span class="attr">name</span>:<span class="string">&#x27;sj&#x27;</span>,<span class="attr">password</span>:<span class="string">&#x27;sjssb&#x27;</span>&#125;</span><br><span class="line">db.<span class="title function_">query</span>(sqlStr3,[user3.<span class="property">name</span>,user3.<span class="property">password</span>,user3.<span class="property">id</span>],<span class="function">(<span class="params">err,results</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err) <span class="keyword">return</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(err.<span class="property">message</span>)</span><br><span class="line">    <span class="keyword">if</span>(results.<span class="property">affectedRows</span> === <span class="number">1</span>)&#123;<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;更新数据成功&#x27;</span>)&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//简易写法</span></span><br><span class="line"><span class="keyword">const</span> sqlStr3 = <span class="string">&#x27;UPDATE users SET ? where id=?&#x27;</span></span><br><span class="line"><span class="keyword">const</span> user3 = &#123;<span class="attr">id</span>:<span class="number">26</span>,<span class="attr">name</span>:<span class="string">&#x27;sj&#x27;</span>,<span class="attr">password</span>:<span class="string">&#x27;sjssb&#x27;</span>&#125;</span><br><span class="line">db.<span class="title function_">query</span>(sqlStr3,[user3,user3.<span class="property">id</span>],<span class="function">(<span class="params">err,results</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err) <span class="keyword">return</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(err.<span class="property">message</span>)</span><br><span class="line">    <span class="keyword">if</span>(results.<span class="property">affectedRows</span> === <span class="number">1</span>)&#123;<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;更新数据成功&#x27;</span>)&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-3-5删除、标记删除"><a href="#2-3-5删除、标记删除" class="headerlink" title="2.3.5删除、标记删除"></a>2.3.5删除、标记删除</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> sqlStr4 = <span class="string">&#x27;DELETE FROM users WHERE id = ?&#x27;</span></span><br><span class="line">db.<span class="title function_">query</span>(sqlStr4,<span class="number">26</span>,<span class="function">(<span class="params">err,results</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err) <span class="keyword">return</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(err.<span class="property">message</span>)</span><br><span class="line">    <span class="keyword">if</span>(results.<span class="property">affectedRows</span> === <span class="number">1</span>)&#123;<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;删除数据成功&#x27;</span>)&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>标记删除：</strong></p>
+<p>使用 DELETE 语句会把真正的把数据从表中删除掉。为了保险起见，<strong>推荐使用</strong>标记删除的形式，<strong>模拟删除的动作</strong>。 </p>
+<p>所谓的标记删除，就是在表中设置类似于 <strong>status</strong> 这样的<strong>状态字段</strong>，来<strong>标记</strong>当前这条数据是否被删除。 </p>
+<p>当用户执行了删除的动作时，我们并没有执行 DELETE 语句把数据删除掉，而是执行了 UPDATE 语句，将这条数据对应 的 status 字段标记为删除即可</p>
+<h1 id="3-前后端身份认证"><a href="#3-前后端身份认证" class="headerlink" title="3.前后端身份认证"></a>3.前后端身份认证</h1><h3 id="3-1-WEB开发模式"><a href="#3-1-WEB开发模式" class="headerlink" title="3.1 WEB开发模式"></a>3.1 WEB开发模式</h3><p>​	目前主流的 Web 开发模式有两种，分别是： </p>
+<ol>
+<li>基于服务端渲染的传统 Web 开发模式 </li>
+<li>基于前后端分离的新型 Web 开发模式</li>
+</ol>
+<h5 id="3-1-1服务端渲染的-Web-开发模式"><a href="#3-1-1服务端渲染的-Web-开发模式" class="headerlink" title="3.1.1服务端渲染的 Web 开发模式"></a>3.1.1服务端渲染的 Web 开发模式</h5><p>​	<strong>服务端渲染的概念：</strong>服务器发送给客户端的 HTML 页面，是在服务器通过字符串的拼接，动态生成的。因此，客户端不需要使用 Ajax 这样的技术额外请求页面的数据。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../pictures/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93%E7%9A%84WEB%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F.png"
+                      alt="服务端渲染的WEB开发模式"
+                ></p>
+<h5 id="3-1-2服务端渲染的优缺点"><a href="#3-1-2服务端渲染的优缺点" class="headerlink" title="3.1.2服务端渲染的优缺点"></a>3.1.2服务端渲染的优缺点</h5><p><strong>优点：</strong></p>
+<ul>
+<li><strong>前端耗时少。</strong>因为服务器端负责动态生成 HTML 内容，浏览器只需要直接渲染页面即可。尤其是移动端，更省电</li>
+<li><strong>有利于SEO。</strong>因为服务器端响应的是<strong>完整的 HTML 页面内容</strong>，所以爬虫更容易爬取获得信息，更有利于 SEO</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>占用服务器端资源。</strong>即服务器端完成 HTML 页面内容的拼接，如果请求较多，会对服务器造成一定的访问压力</li>
+<li><strong>不利于前后端分离，开发效率低。</strong>使用服务器端渲染，则<strong>无法进行分工合作</strong>，尤其对于<strong>前端复杂度高</strong>的项目，不利于项目高效开发</li>
+</ul>
+<h5 id="3-1-3前后端分离的WEB开发模式"><a href="#3-1-3前后端分离的WEB开发模式" class="headerlink" title="3.1.3前后端分离的WEB开发模式"></a>3.1.3前后端分离的WEB开发模式</h5><p>​	<strong>前后端分离的概念：</strong>前后端分离的开发模式，<strong>依赖于 Ajax 技术的广泛应用</strong>。简而言之，就是<strong>后端只负责提供 API 接口，前端使用 Ajax 调用接口</strong>的开发模式</p>
+<h5 id="3-1-4前后端分离的优缺点"><a href="#3-1-4前后端分离的优缺点" class="headerlink" title="3.1.4前后端分离的优缺点"></a>3.1.4前后端分离的优缺点</h5><p><strong>优点：</strong></p>
+<ul>
+<li><strong>开发体验好。</strong>前端专注于 UI 页面的开发，后端专注于api 的开发，且前端有更多的选择性。</li>
+<li><strong>用户体验好。</strong>Ajax 技术的广泛应用，极大的提高了用户的体验，可以轻松实现页面的局部刷新。</li>
+<li><strong>减轻了服务器端的渲染压力。</strong>因为页面最终是在每个用户的浏览器中生成的。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>不利于 SEO。</strong>因为完整的 HTML 页面需要在客户端动态拼接完成，所以爬虫对无法爬取页面的有效信息。（解决方案：利用 Vue、React 等前端框架的 <strong>SSR</strong> （server side render）技术能够很好的解决 SEO 问题！）</li>
+</ul>
+<h5 id="3-1-5开发模式的选择"><a href="#3-1-5开发模式的选择" class="headerlink" title="3.1.5开发模式的选择"></a>3.1.5开发模式的选择</h5><ul>
+<li>企业级网站，主要功能是展示而没有复杂的交互，并且需要良好的 SEO，则这时我们就需要使用<strong>服务器端渲染</strong></li>
+<li>类似后台管理项目，交互性比较强，不需要考虑 SEO，那么就可以使用<strong>前后端分离</strong>的开发模式。</li>
+</ul>
+<p>另外，具体使 用何种开发模式并不是绝对的，为了<strong>同时兼顾</strong>了<strong>首页的渲染速度</strong>和<strong>前后端分离的开发效率</strong>，一些网站采用了<strong>首屏服务器端渲染 + 其他页面前后端分离</strong>的开发模式。</p>
+<h3 id="3-2身份认证"><a href="#3-2身份认证" class="headerlink" title="3.2身份认证"></a>3.2身份认证</h3><h5 id="3-2-1什么是身份认证"><a href="#3-2-1什么是身份认证" class="headerlink" title="3.2.1什么是身份认证"></a>3.2.1什么是身份认证</h5><p>​	<strong>身份认证</strong>（Authentication）又称<strong>“身份验证”、“鉴权”</strong>，是指<strong>通过一定的手段，完成对用户身份的确认</strong>。</p>
+<p>如：检票、手机密码、指纹解锁、手机验证码、邮箱密码登录、二维码登录</p>
+<h5 id="3-2-1为什么需要身份认证"><a href="#3-2-1为什么需要身份认证" class="headerlink" title="3.2.1为什么需要身份认证"></a>3.2.1为什么需要身份认证</h5><p>​	身份认证的目的，是为了<strong>确认当前所声称为某种身份的用户，确实是所声称的用户</strong>。</p>
+<h5 id="3-2-3不同开发模式下的身份认证"><a href="#3-2-3不同开发模式下的身份认证" class="headerlink" title="3.2.3不同开发模式下的身份认证"></a>3.2.3不同开发模式下的身份认证</h5><ul>
+<li><strong>服务端渲染</strong>推荐使用 <strong>Session 认证机制</strong></li>
+<li><strong>前后端分离</strong>推荐使用 <strong>JWT 认证机制</strong></li>
+</ul>
+<h3 id="3-3-Session认证机制"><a href="#3-3-Session认证机制" class="headerlink" title="3.3 Session认证机制"></a>3.3 Session认证机制</h3><h5 id="3-3-1-HTTP-协议的无状态性"><a href="#3-3-1-HTTP-协议的无状态性" class="headerlink" title="3.3.1 HTTP 协议的无状态性"></a>3.3.1 HTTP 协议的无状态性</h5><p>​	了解 HTTP 协议的<strong>无状态性</strong>是进一步学习 Session 认证机制的必要前提。</p>
+<p>​	HTTP 协议的<strong>无状态性</strong>，指的是客户端<strong>的每次 HTTP 请求都是独立的</strong>，连续多个请求之间没有直接的关系，<strong>服务器不会主动保留每次 HTTP 请求的状态</strong>。</p>
+<h5 id="3-3-2突破HTTP无状态的限制、Cookie"><a href="#3-3-2突破HTTP无状态的限制、Cookie" class="headerlink" title="3.3.2突破HTTP无状态的限制、Cookie"></a>3.3.2突破HTTP无状态的限制、Cookie</h5><p>​	对于超市来说，为了方便收银员在进行结算时给 VIP 用户打折，超市可以为每个 VIP 用户发放会员卡，现实生活中的<strong>会员卡身份认证方式</strong>，在 Web 开发中的专业术语叫做 <strong>Cookie</strong></p>
+<p>​	<strong>Cookie</strong> 是<strong>存储在用户浏览器中的一段不超过 4 KB 的字符串</strong>。它由一个<strong>名称</strong>（Name）、一个<strong>值</strong>（Value）和其它几个用于控制 Cookie <strong>有效期、安全性、使用范围</strong>的<strong>可选属性</strong>组成。 </p>
+<p>​	<strong>Cookie的几大特性：</strong></p>
+<ul>
+<li>自动发送</li>
+<li>域名独立</li>
+<li>过期时限</li>
+<li>4kb限制</li>
+</ul>
+<h5 id="3-3-3Cookie在身份认证中的作用"><a href="#3-3-3Cookie在身份认证中的作用" class="headerlink" title="3.3.3Cookie在身份认证中的作用"></a>3.3.3Cookie在身份认证中的作用</h5><p>​	客户端第一次请求服务器的时候，服务器<strong>通过响应头的形式</strong>，向客户端发送一个身份认证的 Cookie，客户端会自动将 Cookie 保存在浏览器中。 </p>
+<p>​	随后，当客户端浏览器每次请求服务器的时候，浏览器会<strong>自动</strong>将身份认证相关的 Cookie，<strong>通过请求头的形式</strong>发送给 服务器，服务器即可验明客户端的身份</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../pictures/COOKIE1.png"
+                      alt="COOKIE"
+                ></p>
+<h5 id="3-3-4安全性（NO）"><a href="#3-3-4安全性（NO）" class="headerlink" title="3.3.4安全性（NO）"></a>3.3.4安全性（NO）</h5><p>​	由于 Cookie 是存储在浏览器中的，而且<strong>浏览器也提供了读写 Cookie 的 API</strong>，因此 <strong>Cookie 很容易被伪造</strong>，<strong>不具有安全性</strong>。因此不建议服务器将重要的隐私数据，通过 Cookie 的形式发送给浏览器。 </p>
+<p>​	<strong>注意：</strong>千万<strong>不要使用</strong> Cookie 存储重要且隐私的数据！比如用户的身份信息、密码等</p>
+<p>​	为了防止客户伪造会员卡，收银员在拿到客户出示的会员卡之后，可以<strong>在收银机上进行刷卡认证</strong>。只有收银机确认存在的会员卡，才能被正常使用</p>
+<p>​	这种<strong>“会员卡”+“刷卡认证”</strong>的设计理念，就是<strong>SESSION认证机制</strong>的精髓</p>
+<h5 id="3-3-5-Session的工作原理"><a href="#3-3-5-Session的工作原理" class="headerlink" title="3.3.5 Session的工作原理"></a>3.3.5 Session的工作原理</h5><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../pictures/Session%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png"
+                      alt="COOKIE"
+                ></p>
+<h5 id="3-3-6-Session认证的局限性"><a href="#3-3-6-Session认证的局限性" class="headerlink" title="3.3.6 Session认证的局限性"></a>3.3.6 Session认证的局限性</h5><p>​	Session 认证机制需要<strong>配合 Cookie 才能实现</strong>。由于 Cookie <strong>默认不支持跨域访问</strong>，所以，当涉及到前端跨域请求后端接口的时候，<strong>需要做很多额外的配置</strong>，才能实现跨域 Session 认证。 </p>
+<ul>
+<li>当前端请求后端接口<strong>不存在跨域问题</strong>的时候，<strong>推荐使用 Session</strong> 身份认证机制</li>
+<li>当前端需要跨域请求后端接口的时候，不推荐使用 Session 身份认证机制，推荐使用 JWT 认证机制。</li>
+</ul>
+<h3 id="3-4在Express中使用Session认证"><a href="#3-4在Express中使用Session认证" class="headerlink" title="3.4在Express中使用Session认证"></a>3.4在Express中使用Session认证</h3><h5 id="3-4-1安装-express-session-中间件"><a href="#3-4-1安装-express-session-中间件" class="headerlink" title="3.4.1安装 express-session 中间件"></a>3.4.1安装 express-session 中间件</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i express-session</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-4-2配置-express-session"><a href="#3-4-2配置-express-session" class="headerlink" title="3.4.2配置 express-session"></a>3.4.2配置 express-session</h5><p>​	express-session 中间件安装成功后，需要通过 <strong>app.use()</strong> 来注册 session 中间件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>)</span><br><span class="line"><span class="comment">//1.导入express-session</span></span><br><span class="line"><span class="keyword">const</span> session = <span class="built_in">require</span>()</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">express</span>()</span><br><span class="line"><span class="comment">//2.配置express-session中间件</span></span><br><span class="line">app.<span class="title function_">use</span>(<span class="title function_">session</span>(&#123;</span><br><span class="line">    <span class="attr">secret</span>:<span class="string">&#x27;itcyd&#x27;</span>, <span class="comment">//secret属性的值可以为任意字符串</span></span><br><span class="line">    <span class="attr">resave</span>:<span class="literal">false</span>,<span class="comment">//固定写法</span></span><br><span class="line">    <span class="attr">saveUninitialized</span>:<span class="literal">true</span><span class="comment">//固定写法</span></span><br><span class="line"></span><br><span class="line">&#125;))</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-4-3向Session存数据"><a href="#3-4-3向Session存数据" class="headerlink" title="3.4.3向Session存数据"></a>3.4.3向Session存数据</h5><p>​	当 express-session 中间件配置成功后，即可通过 <strong>req.session</strong> 来访问和使用 session 对象，从而存储用户的关键信息</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 登录的 API 接口</span></span><br><span class="line">app.<span class="title function_">post</span>(<span class="string">&#x27;/api/login&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 判断用户提交的登录信息是否正确</span></span><br><span class="line">  <span class="keyword">if</span> (req.<span class="property">body</span>.<span class="property">username</span> !== <span class="string">&#x27;admin&#x27;</span> || req.<span class="property">body</span>.<span class="property">password</span> !== <span class="string">&#x27;000000&#x27;</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> res.<span class="title function_">send</span>(&#123; <span class="attr">status</span>: <span class="number">1</span>, <span class="attr">msg</span>: <span class="string">&#x27;登录失败&#x27;</span> &#125;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// TODO_02：请将登录成功后的用户信息，保存到 Session 中</span></span><br><span class="line">  <span class="comment">//注意：只有成功配置了 express-session 中间件后，才能通过req点出来</span></span><br><span class="line">  req.<span class="property">session</span>.<span class="property">user</span> = req.<span class="property">body</span> <span class="comment">//用户信息</span></span><br><span class="line">  req.<span class="property">session</span>.<span class="property">islogin</span> = <span class="literal">true</span><span class="comment">//用户的登录状态</span></span><br><span class="line">  res.<span class="title function_">send</span>(&#123; <span class="attr">status</span>: <span class="number">0</span>, <span class="attr">msg</span>: <span class="string">&#x27;登录成功&#x27;</span> &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-4-4从Session取数据"><a href="#3-4-4从Session取数据" class="headerlink" title="3.4.4从Session取数据"></a>3.4.4从Session取数据</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取用户姓名的接口</span></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/api/username&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// TODO_03：请从 Session 中获取用户的名称，响应给客户端</span></span><br><span class="line">  <span class="keyword">if</span>(!req.<span class="property">session</span>.<span class="property">islogin</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span> res.<span class="title function_">send</span>(&#123;<span class="attr">status</span>:<span class="number">1</span>,<span class="attr">msg</span>:<span class="string">&#x27;fail&#x27;</span>&#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  req.<span class="title function_">send</span>(&#123;</span><br><span class="line">    <span class="attr">status</span>:<span class="number">0</span>,</span><br><span class="line">    <span class="attr">msg</span>:<span class="string">&quot;success&quot;</span>,</span><br><span class="line">    <span class="attr">username</span>:req.<span class="property">session</span>.<span class="property">user</span>.<span class="property">username</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-4-5清空-Session"><a href="#3-4-5清空-Session" class="headerlink" title="3.4.5清空 Session"></a>3.4.5清空 Session</h5><p>调用  <strong>req.session.destroy()</strong> 函数，即可<strong>清空服务器保存的 session 信息</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 退出登录的接口</span></span><br><span class="line">app.<span class="title function_">post</span>(<span class="string">&#x27;/api/logout&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// TODO_04：清空 Session 信息</span></span><br><span class="line">  req.<span class="property">session</span>.<span class="title function_">destroy</span>()</span><br><span class="line">  res.<span class="title function_">send</span>(&#123;</span><br><span class="line">    <span class="attr">status</span>:<span class="number">0</span>,</span><br><span class="line">    <span class="attr">msg</span>:<span class="string">&#x27;退出登录成功&#x27;</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-5-JWT认证机制"><a href="#3-5-JWT认证机制" class="headerlink" title="3.5 JWT认证机制"></a>3.5 JWT认证机制</h3><h5 id="3-5-1什么是JWT"><a href="#3-5-1什么是JWT" class="headerlink" title="3.5.1什么是JWT"></a>3.5.1什么是JWT</h5><p>​	JWT（英文全称：JSON Web Token）是目前<strong>最流行</strong>的<strong>跨域认证解决方案</strong>。</p>
+<h5 id="3-5-2-JWT的工作原理"><a href="#3-5-2-JWT的工作原理" class="headerlink" title="3.5.2 JWT的工作原理"></a>3.5.2 JWT的工作原理</h5><p>​	用户的信息通过 <strong>Token 字符串</strong>的形式，保存在客户端浏览器中。服务器通过<strong>还原 Token 字符串</strong>的形式来认证用户的身份。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/../pictures/JWT%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6.png"
+                      alt="JWT认证机制"
+                ></p>
+<h5 id="3-5-3-JWT组成部分"><a href="#3-5-3-JWT组成部分" class="headerlink" title="3.5.3 JWT组成部分"></a>3.5.3 JWT组成部分</h5><p>​	JWT 通常由三部分组成，分别是 <strong>Header（头部）、Payload（有效荷载）、Signature（签名）</strong>，三者之间用 . 分隔</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Header.Payload.Signature</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>Payload</strong>,才是真正的用户信息，它是用户信息经过加密之后生成的字符串</li>
+<li>Header和Signature是<strong>安全性</strong>相关的部分，只是为了保证Token的安全性</li>
+</ul>
+<h5 id="3-5-4-JWT的使用方式"><a href="#3-5-4-JWT的使用方式" class="headerlink" title="3.5.4 JWT的使用方式"></a>3.5.4 JWT的使用方式</h5><p>​	客户端收到服务器返回的 JWT 之后，通常会将它储存在 <strong>localStorage 或 sessionStorage</strong> 中，此后，客户端每次与服务器通信，都要带上这个 JWT 的字符串，从而进行身份认证。推荐的做法是<strong>把 JWT 放在 HTTP请求头的 Authorization 字段中</strong>，格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Authorization: Bearer &lt;token&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-6在Express中使用JWT"><a href="#3-6在Express中使用JWT" class="headerlink" title="3.6在Express中使用JWT"></a>3.6在Express中使用JWT</h3><h5 id="3-6-1安装JWT相关的包"><a href="#3-6-1安装JWT相关的包" class="headerlink" title="3.6.1安装JWT相关的包"></a>3.6.1安装JWT相关的包</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i jsonwebtoken express-jwt</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>jsonwebtoken</strong> 用于生成JWT字符串</li>
+<li><strong>express-jwt</strong> 用于将 JWT 字符串解析还原成 JSON 对象</li>
+</ul>
+<h5 id="3-6-2定义secret密钥"><a href="#3-6-2定义secret密钥" class="headerlink" title="3.6.2定义secret密钥"></a>3.6.2定义secret密钥</h5><p>​	为了保证 JWT 字符串的安全性，防止 JWT 字符串在网络传输过程中被别人破解，我们需要专门定义一个用于<strong>加密</strong>和<strong>解密</strong>的 secret 密钥，<strong>本质就是一个字符串</strong>。</p>
+<ul>
+<li>当生成 JWT 字符串的时候，需要使用 secret 密钥对用户的信息进行加密，最终得到加密好的 JWT 字符串</li>
+<li>当把 JWT 字符串解析还原成 JSON 对象的时候，需要使用 secret 密钥进行解密</li>
+</ul>
+<h5 id="3-6-3在登录成功后生成-JWT-字符串"><a href="#3-6-3在登录成功后生成-JWT-字符串" class="headerlink" title="3.6.3在登录成功后生成 JWT 字符串"></a>3.6.3<strong>在登录成功</strong>后生成 JWT 字符串</h5><p>​	调用 <strong>jsonwebtoken</strong> 包提供的 <strong>sign()</strong> 方法，将用户的信息加密成 JWT 字符串，响应给客户端</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 登录接口</span></span><br><span class="line">app.<span class="title function_">post</span>(<span class="string">&#x27;/api/login&#x27;</span>, <span class="keyword">function</span> (<span class="params">req, res</span>) &#123;</span><br><span class="line">  <span class="comment">// 将 req.body 请求体中的数据，转存为 userinfo 常量</span></span><br><span class="line">  <span class="keyword">const</span> userinfo = req.<span class="property">body</span></span><br><span class="line">  <span class="comment">// 登录失败</span></span><br><span class="line">  <span class="keyword">if</span> (userinfo.<span class="property">username</span> !== <span class="string">&#x27;admin&#x27;</span> || userinfo.<span class="property">password</span> !== <span class="string">&#x27;000000&#x27;</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> res.<span class="title function_">send</span>(&#123;</span><br><span class="line">      <span class="attr">status</span>: <span class="number">400</span>,</span><br><span class="line">      <span class="attr">message</span>: <span class="string">&#x27;登录失败！&#x27;</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 登录成功</span></span><br><span class="line">  <span class="comment">// TODO_03：在登录成功之后，调用 jwt.sign() 方法生成 JWT 字符串。并通过 token 属性发送给客户端</span></span><br><span class="line">  <span class="comment">//三个参数分别书 用户信息对象，加密密钥，配置对象</span></span><br><span class="line">  tokenStr = jwt.<span class="title function_">sign</span>(&#123;<span class="attr">username</span>:userinfo.<span class="property">username</span>&#125;,secretKey,&#123;<span class="attr">expiresIn</span>:<span class="string">&#x27;30s&#x27;</span>&#125;)</span><br><span class="line">  res.<span class="title function_">send</span>(&#123;</span><br><span class="line">    <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">    <span class="attr">message</span>: <span class="string">&#x27;登录成功！&#x27;</span>,</span><br><span class="line">    <span class="attr">token</span>: tokenStr<span class="comment">// 要发送给客户端的 token 字符串</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-6-4-将-JWT-字符串还原为JSON-对象"><a href="#3-6-4-将-JWT-字符串还原为JSON-对象" class="headerlink" title="3.6.4 将 JWT 字符串还原为JSON 对象"></a>3.6.4 <strong>将</strong> JWT 字符串还原为JSON 对象</h5><p>​	客户端每次在访问那些有权限接口的时候，都需要主动通过<strong>请求头中的 Authorization 字段</strong>，将 Token 字符串发送到服务器进行身份认证。 </p>
+<p>​	服务器可以通过 <strong>express-jwt</strong> 这个中间件，自动将客户端发送过来的 Token 解析还原成 JSON 对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// TODO_04：注册将 JWT 字符串解析还原成 JSON 对象的中间件</span></span><br><span class="line"><span class="comment">//使用app.use注册中间件</span></span><br><span class="line"><span class="comment">//expressJWT(&#123;secret:secretKey&#125;)就是用来解析 Token 的中间件</span></span><br><span class="line"><span class="comment">//.unless(&#123;path:[/^\/api\//]&#125;)用来指定哪些接口不需要访问权限</span></span><br><span class="line">app.<span class="title function_">use</span>(<span class="title function_">expressJWT</span>(&#123;<span class="attr">secret</span>:secretKey&#125;).<span class="title function_">unless</span>(&#123;<span class="attr">path</span>:[<span class="regexp">/^\/api\//</span>]&#125;))</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-6-5使用req-user获取用户信息"><a href="#3-6-5使用req-user获取用户信息" class="headerlink" title="3.6.5使用req.user获取用户信息"></a>3.6.5使用req.user获取用户信息</h5><p>​	当 express-jwt 这个中间件配置成功之后，即可在那些有权限的接口中，使用 <strong>req.user</strong> 对象，来访问从 JWT 字符串中解析出来的用户信息</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这是一个有权限的 API 接口</span></span><br><span class="line"><span class="comment">//只要配置成功了express-jwt就会把解析出来的用户信息，挂在到req.user属性上</span></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/admin/getinfo&#x27;</span>, <span class="keyword">function</span> (<span class="params">req, res</span>) &#123;</span><br><span class="line">  <span class="comment">// TODO_05：使用 req.user 获取用户信息，并使用 data 属性将用户信息发送给客户端</span></span><br><span class="line">  res.<span class="title function_">send</span>(&#123;</span><br><span class="line">    <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">    <span class="attr">message</span>: <span class="string">&#x27;获取用户信息成功！&#x27;</span>,</span><br><span class="line">    <span class="attr">data</span>: req.<span class="property">user</span> <span class="comment">// 要发送给客户端的用户信息</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-6-6捕获解析JWT失败后产生的错误"><a href="#3-6-6捕获解析JWT失败后产生的错误" class="headerlink" title="3.6.6捕获解析JWT失败后产生的错误"></a>3.6.6捕获解析JWT失败后产生的错误</h5><p>​	当使用 express-jwt 解析 Token 字符串时，如果客户端发送过来的 Token 字符串<strong>过期</strong>或<strong>不合法</strong>，会产生一个<strong>解析失败</strong>的错误，影响项目的正常运行。我们可以通过 <strong>Express 的错误中间件</strong>，捕获这个错误并进行相关的处理</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">use</span>(<span class="function">(<span class="params">err,req,res,next</span>)=&gt;</span>&#123;</span><br><span class="line">  <span class="comment">//Token解析失败导致的错误</span></span><br><span class="line">  <span class="keyword">if</span>(err.<span class="property">name</span> === <span class="string">&#x27;UnauthorizedError&#x27;</span>)&#123;</span><br><span class="line">    <span class="keyword">return</span> res.<span class="title function_">send</span>(&#123;<span class="attr">status</span>:<span class="number">401</span>,<span class="attr">message</span>:<span class="string">&#x27;无效的Token&#x27;</span>&#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//其他原因导致的错误</span></span><br><span class="line">  res.<span class="title function_">send</span>(&#123;<span class="attr">status</span>:<span class="number">500</span>,<span class="attr">message</span>:<span class="string">&#x27;未知错误&#x27;</span>&#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 导入 express 模块</span></span><br><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>)</span><br><span class="line"><span class="comment">// 创建 express 的服务器实例</span></span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">express</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment">// TODO_01：安装并导入 JWT 相关的两个包，分别是 jsonwebtoken 和 express-jwt</span></span><br><span class="line"><span class="keyword">const</span> jwt = <span class="built_in">require</span>(<span class="string">&#x27;jsonwebtoken&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> expressJWT = <span class="built_in">require</span>(<span class="string">&#x27;express-jwt&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 允许跨域资源共享</span></span><br><span class="line"><span class="keyword">const</span> cors = <span class="built_in">require</span>(<span class="string">&#x27;cors&#x27;</span>)</span><br><span class="line">app.<span class="title function_">use</span>(<span class="title function_">cors</span>())</span><br><span class="line"></span><br><span class="line"><span class="comment">// 解析 post 表单数据的中间件</span></span><br><span class="line"><span class="keyword">const</span> bodyParser = <span class="built_in">require</span>(<span class="string">&#x27;body-parser&#x27;</span>)</span><br><span class="line">app.<span class="title function_">use</span>(bodyParser.<span class="title function_">urlencoded</span>(&#123; <span class="attr">extended</span>: <span class="literal">false</span> &#125;))</span><br><span class="line"></span><br><span class="line"><span class="comment">// TODO_02：定义 secret 密钥，建议将密钥命名为 secretKey</span></span><br><span class="line"><span class="keyword">const</span> secretKey = <span class="string">&#x27;itheima No1 ^_^&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// TODO_04：注册将 JWT 字符串解析还原成 JSON 对象的中间件</span></span><br><span class="line"><span class="comment">// 注意：只要配置成功了 express-jwt 这个中间件，就可以把解析出来的用户信息，挂载到 req.user 属性上</span></span><br><span class="line">app.<span class="title function_">use</span>(<span class="title function_">expressJWT</span>(&#123; <span class="attr">secret</span>: secretKey &#125;).<span class="title function_">unless</span>(&#123; <span class="attr">path</span>: [<span class="regexp">/^\/api\//</span>] &#125;))</span><br><span class="line"></span><br><span class="line"><span class="comment">// 登录接口</span></span><br><span class="line">app.<span class="title function_">post</span>(<span class="string">&#x27;/api/login&#x27;</span>, <span class="keyword">function</span> (<span class="params">req, res</span>) &#123;</span><br><span class="line">  <span class="comment">// 将 req.body 请求体中的数据，转存为 userinfo 常量</span></span><br><span class="line">  <span class="keyword">const</span> userinfo = req.<span class="property">body</span></span><br><span class="line">  <span class="comment">// 登录失败</span></span><br><span class="line">  <span class="keyword">if</span> (userinfo.<span class="property">username</span> !== <span class="string">&#x27;admin&#x27;</span> || userinfo.<span class="property">password</span> !== <span class="string">&#x27;000000&#x27;</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> res.<span class="title function_">send</span>(&#123;</span><br><span class="line">      <span class="attr">status</span>: <span class="number">400</span>,</span><br><span class="line">      <span class="attr">message</span>: <span class="string">&#x27;登录失败！&#x27;</span>,</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 登录成功</span></span><br><span class="line">  <span class="comment">// TODO_03：在登录成功之后，调用 jwt.sign() 方法生成 JWT 字符串。并通过 token 属性发送给客户端</span></span><br><span class="line">  <span class="comment">// 参数1：用户的信息对象</span></span><br><span class="line">  <span class="comment">// 参数2：加密的秘钥</span></span><br><span class="line">  <span class="comment">// 参数3：配置对象，可以配置当前 token 的有效期</span></span><br><span class="line">  <span class="comment">// 记住：千万不要把密码加密到 token 字符中</span></span><br><span class="line">  <span class="keyword">const</span> tokenStr = jwt.<span class="title function_">sign</span>(&#123; <span class="attr">username</span>: userinfo.<span class="property">username</span> &#125;, secretKey, &#123; <span class="attr">expiresIn</span>: <span class="string">&#x27;30s&#x27;</span> &#125;)</span><br><span class="line">  res.<span class="title function_">send</span>(&#123;</span><br><span class="line">    <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">    <span class="attr">message</span>: <span class="string">&#x27;登录成功！&#x27;</span>,</span><br><span class="line">    <span class="attr">token</span>: tokenStr, <span class="comment">// 要发送给客户端的 token 字符串</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这是一个有权限的 API 接口</span></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/admin/getinfo&#x27;</span>, <span class="keyword">function</span> (<span class="params">req, res</span>) &#123;</span><br><span class="line">  <span class="comment">// TODO_05：使用 req.user 获取用户信息，并使用 data 属性将用户信息发送给客户端</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(req.<span class="property">user</span>)</span><br><span class="line">  res.<span class="title function_">send</span>(&#123;</span><br><span class="line">    <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">    <span class="attr">message</span>: <span class="string">&#x27;获取用户信息成功！&#x27;</span>,</span><br><span class="line">    <span class="attr">data</span>: req.<span class="property">user</span>, <span class="comment">// 要发送给客户端的用户信息</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// TODO_06：使用全局错误处理中间件，捕获解析 JWT 失败后产生的错误</span></span><br><span class="line">app.<span class="title function_">use</span>(<span class="function">(<span class="params">err, req, res, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 这次错误是由 token 解析失败导致的</span></span><br><span class="line">  <span class="keyword">if</span> (err.<span class="property">name</span> === <span class="string">&#x27;UnauthorizedError&#x27;</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> res.<span class="title function_">send</span>(&#123;</span><br><span class="line">      <span class="attr">status</span>: <span class="number">401</span>,</span><br><span class="line">      <span class="attr">message</span>: <span class="string">&#x27;无效的token&#x27;</span>,</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  res.<span class="title function_">send</span>(&#123;</span><br><span class="line">    <span class="attr">status</span>: <span class="number">500</span>,</span><br><span class="line">    <span class="attr">message</span>: <span class="string">&#x27;未知的错误&#x27;</span>,</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用 app.listen 方法，指定端口号并启动web服务器</span></span><br><span class="line">app.<span class="title function_">listen</span>(<span class="number">8888</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Express server running at http://127.0.0.1:8888&#x27;</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/MySQL/">#MySQL</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/08/11/9.%E2%80%9D%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%E2%80%9CNodejs/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">9.和小达一起学Node.js</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2022/08/11/11.%E2%80%9D%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%E2%80%9CReact/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">11.和小达一起学React</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Eddie</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        Totalview&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+            <li class="tools-item rss flex-center">
+                <a class="flex-center"
+                   href="/atom.xml"
+                   target="_blank"
+                >
+                    <i class="fas fa-rss"></i>
+                </a>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-text">1.数据库的基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-text">1.1数据库的基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-1%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-text">1.1.1什么是数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-2%E5%B8%B8%E8%A7%81%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8C%E5%88%86%E7%B1%BB"><span class="nav-text">1.1.2常见的数据库和分类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-3%E4%BC%A0%E7%BB%9F%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84"><span class="nav-text">1.1.3传统型数据库的组织结构</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-MySQL%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="nav-text">2.MySQL的基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1%E4%BD%BF%E7%94%A8MySQL-Workbench%E7%AE%A1%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-text">2.1使用MySQL Workbench管理数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-1%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-text">2.1.1连接数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-2%E7%95%8C%E9%9D%A2%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="nav-text">2.1.2界面组成部分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-3%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-text">2.1.3创建数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-4%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E8%A1%A8"><span class="nav-text">2.1.4创建数据表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-5%E5%90%91%E8%A1%A8%E4%B8%AD%E5%86%99%E5%85%A5%E6%95%B0%E6%8D%AE"><span class="nav-text">2.1.5向表中写入数据</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2%E4%BD%BF%E7%94%A8SQL%E7%AE%A1%E7%90%86%E6%95%B0%E6%8D%AE"><span class="nav-text">2.2使用SQL管理数据</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-1%E4%BB%80%E4%B9%88%E6%98%AFSQL"><span class="nav-text">2.2.1什么是SQL</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-2SQL%E5%8F%AF%E4%BB%A5%E5%81%9A%E4%BB%80%E4%B9%88"><span class="nav-text">2.2.2SQL可以做什么</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-3%E6%9F%A5%E8%AF%A2-SELECT%E8%AF%AD%E5%8F%A5"><span class="nav-text">2.2.3查询 - SELECT语句</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-4%E6%8F%92%E5%85%A5-INSERT-INTO"><span class="nav-text">2.2.4插入 - INSERT INTO</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-5%E6%9B%B4%E6%96%B0-UPDATE"><span class="nav-text">2.2.5更新 - UPDATE</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-6%E5%88%A0%E9%99%A4-DELETE-FROM"><span class="nav-text">2.2.6删除 - DELETE FROM</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-7-WHERE%E5%AD%90%E5%8F%A5"><span class="nav-text">2.2.7 WHERE子句</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-8-AND%E5%92%8COR%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">2.2.8 AND和OR运算符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-9-ORDER-BY%E5%AD%90%E5%8F%A5"><span class="nav-text">2.2.9 ORDER BY子句</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-10-COUNT-%E5%87%BD%E6%95%B0"><span class="nav-text">2.2.10 COUNT(*)函数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E6%93%8D%E4%BD%9CMySQL"><span class="nav-text">2.3在项目中操作MySQL</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-1%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE"><span class="nav-text">2.3.1安装与配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-2%E6%9F%A5%E8%AF%A2"><span class="nav-text">2.3.2查询</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-3%E6%8F%92%E5%85%A5"><span class="nav-text">2.3.3插入</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-4%E6%9B%B4%E6%96%B0"><span class="nav-text">2.3.4更新</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-5%E5%88%A0%E9%99%A4%E3%80%81%E6%A0%87%E8%AE%B0%E5%88%A0%E9%99%A4"><span class="nav-text">2.3.5删除、标记删除</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E5%89%8D%E5%90%8E%E7%AB%AF%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81"><span class="nav-text">3.前后端身份认证</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-WEB%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F"><span class="nav-text">3.1 WEB开发模式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1-1%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93%E7%9A%84-Web-%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F"><span class="nav-text">3.1.1服务端渲染的 Web 开发模式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1-2%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="nav-text">3.1.2服务端渲染的优缺点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1-3%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E7%9A%84WEB%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F"><span class="nav-text">3.1.3前后端分离的WEB开发模式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1-4%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="nav-text">3.1.4前后端分离的优缺点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1-5%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F%E7%9A%84%E9%80%89%E6%8B%A9"><span class="nav-text">3.1.5开发模式的选择</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81"><span class="nav-text">3.2身份认证</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-1%E4%BB%80%E4%B9%88%E6%98%AF%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81"><span class="nav-text">3.2.1什么是身份认证</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-1%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81"><span class="nav-text">3.2.1为什么需要身份认证</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-3%E4%B8%8D%E5%90%8C%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9A%84%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81"><span class="nav-text">3.2.3不同开发模式下的身份认证</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-Session%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6"><span class="nav-text">3.3 Session认证机制</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-1-HTTP-%E5%8D%8F%E8%AE%AE%E7%9A%84%E6%97%A0%E7%8A%B6%E6%80%81%E6%80%A7"><span class="nav-text">3.3.1 HTTP 协议的无状态性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-2%E7%AA%81%E7%A0%B4HTTP%E6%97%A0%E7%8A%B6%E6%80%81%E7%9A%84%E9%99%90%E5%88%B6%E3%80%81Cookie"><span class="nav-text">3.3.2突破HTTP无状态的限制、Cookie</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-3Cookie%E5%9C%A8%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81%E4%B8%AD%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-text">3.3.3Cookie在身份认证中的作用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-4%E5%AE%89%E5%85%A8%E6%80%A7%EF%BC%88NO%EF%BC%89"><span class="nav-text">3.3.4安全性（NO）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-5-Session%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="nav-text">3.3.5 Session的工作原理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-6-Session%E8%AE%A4%E8%AF%81%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7"><span class="nav-text">3.3.6 Session认证的局限性</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4%E5%9C%A8Express%E4%B8%AD%E4%BD%BF%E7%94%A8Session%E8%AE%A4%E8%AF%81"><span class="nav-text">3.4在Express中使用Session认证</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-1%E5%AE%89%E8%A3%85-express-session-%E4%B8%AD%E9%97%B4%E4%BB%B6"><span class="nav-text">3.4.1安装 express-session 中间件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-2%E9%85%8D%E7%BD%AE-express-session"><span class="nav-text">3.4.2配置 express-session</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-3%E5%90%91Session%E5%AD%98%E6%95%B0%E6%8D%AE"><span class="nav-text">3.4.3向Session存数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-4%E4%BB%8ESession%E5%8F%96%E6%95%B0%E6%8D%AE"><span class="nav-text">3.4.4从Session取数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-5%E6%B8%85%E7%A9%BA-Session"><span class="nav-text">3.4.5清空 Session</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-JWT%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6"><span class="nav-text">3.5 JWT认证机制</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5-1%E4%BB%80%E4%B9%88%E6%98%AFJWT"><span class="nav-text">3.5.1什么是JWT</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5-2-JWT%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="nav-text">3.5.2 JWT的工作原理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5-3-JWT%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="nav-text">3.5.3 JWT组成部分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5-4-JWT%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F"><span class="nav-text">3.5.4 JWT的使用方式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-6%E5%9C%A8Express%E4%B8%AD%E4%BD%BF%E7%94%A8JWT"><span class="nav-text">3.6在Express中使用JWT</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-1%E5%AE%89%E8%A3%85JWT%E7%9B%B8%E5%85%B3%E7%9A%84%E5%8C%85"><span class="nav-text">3.6.1安装JWT相关的包</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-2%E5%AE%9A%E4%B9%89secret%E5%AF%86%E9%92%A5"><span class="nav-text">3.6.2定义secret密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-3%E5%9C%A8%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E5%90%8E%E7%94%9F%E6%88%90-JWT-%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-text">3.6.3在登录成功后生成 JWT 字符串</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-4-%E5%B0%86-JWT-%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BF%98%E5%8E%9F%E4%B8%BAJSON-%E5%AF%B9%E8%B1%A1"><span class="nav-text">3.6.4 将 JWT 字符串还原为JSON 对象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-5%E4%BD%BF%E7%94%A8req-user%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF"><span class="nav-text">3.6.5使用req.user获取用户信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-6%E6%8D%95%E8%8E%B7%E8%A7%A3%E6%9E%90JWT%E5%A4%B1%E8%B4%A5%E5%90%8E%E4%BA%A7%E7%94%9F%E7%9A%84%E9%94%99%E8%AF%AF"><span class="nav-text">3.6.6捕获解析JWT失败后产生的错误</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/dark-light-toggle.js"></script>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/local-search.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/code-copy.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/lazyload.js"></script>
+
+
+<div class="post-scripts pjax">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/left-side-toggle.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/toc.js"></script>
+    
+</div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
