@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="小达的秘密森林记录了小达辛酸的学习历程，也收获了学习成果，将所学知识整理汇总出完善的知识体系...正在持续更新中...请期待...谢谢支持...">
+    <meta name="author" content="Eddie">
+    
+    <title>
+        
+            和小达一起学Linux |
+        
+        Eddie的秘密学习森林
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/tou.jpg">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/css/font-awesome.min.css">
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/tou.jpg","favicon":"/images/tou.jpg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"世界上绝大多数事情都没有太大意义,真理与爱除外"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+  </script>
+<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="小达的秘密森林" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fas fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                Eddie的秘密学习森林
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                所有博客
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                笔记类别
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               target="_blank" rel="noopener" href="https://gitee.com/excellentcyd"
+                            >
+                                GITEE
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">所有博客</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">笔记类别</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       target="_blank" rel="noopener" href="https://gitee.com/excellentcyd">GITEE</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">和小达一起学Linux</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/tou.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Eddie</span>
+                        
+                            <span class="author-label">Architect</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-08-11 19:30:31</span>
+        <span class="mobile">2022-08-11 19:30</span>
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/Linux/">Linux</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Linux/">Linux</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>3.8k 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>15 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h1 id="1-常用命令"><a href="#1-常用命令" class="headerlink" title=":+1: 常用命令"></a>:+1: 常用命令</h1><h2 id="1、权限"><a href="#1、权限" class="headerlink" title="1、权限"></a>1、权限</h2><p><strong>文件</strong></p>
+<ul>
+<li>chgrp：更改文件属组；<code>chgrp [-R] 属组名 文件名</code>，-R递归</li>
+<li>chown：更改文件属主，也可以同时更改文件属组；<code>chown [–R] 属主名 文件名</code> 或 <code>chown [-R] 属主名：属组名 文件名</code></li>
+<li>chmod：更改文件9个属性；<code>chmod [-R] xyz 文件或目录</code></li>
+</ul>
+<p><strong>用户</strong></p>
+<ul>
+<li>useradd：添加账号；-m创建使用者目录，-g用户组，-d指定用户主目录</li>
+<li>userdel：删除用户；-r删除使用者目录</li>
+<li>usermod：修改账号；</li>
+<li>passwd：用户口令；-i锁定，-u解锁，-d无口令，-f强迫修改</li>
+<li>su：切换用户；<code>su - root</code> 新工作环境</li>
+<li>sudo：获取临时的root权限；<code>sudo su</code></li>
+</ul>
+<p><strong>用户组</strong></p>
+<ul>
+<li>groupadd：创建用户组；-g指定GID</li>
+<li>groupdel ：删除用户组；</li>
+<li>groupmod：修改用户组；-n 新名字</li>
+<li>newgrp ：切换组；</li>
+</ul>
+<h2 id="2、目录"><a href="#2、目录" class="headerlink" title="2、目录"></a>2、目录</h2><p>-f：强制，-i：再次询问</p>
+<ul>
+<li>ls: 列出目录，-a隐藏文件，-l列表，-i显示inode</li>
+<li>cd：切换目录</li>
+<li>pwd：显示目前的目录</li>
+<li>mkdir：创建一个新的目录，-p递归创建子目录，-m配置权限</li>
+<li>rmdir：删除一个空的目录，-p递归删除子目录</li>
+<li>cp: 复制文件或目录</li>
+<li>rm: 移除文件或目录，-r递归删除</li>
+<li>mv: 移动文件与目录，或修改文件与目录的名称</li>
+</ul>
+<h2 id="3、文件"><a href="#3、文件" class="headerlink" title="3、文件"></a>3、文件</h2><ul>
+<li>touch：新建文件</li>
+<li>vim：新建、修改</li>
+<li>echo：输入字符串；<code>echo &quot;str&quot; &gt;&gt; 文件名</code></li>
+<li>cat：由第一行开始显示文件内容</li>
+<li>tac：从最后一行开始显示，可以看出 tac 是 cat 的倒着写！</li>
+<li>nl ：显示的时候，顺道输出行号！</li>
+<li>more：一页一页的显示文件内容</li>
+<li>less：与 more 类似，但是比 more 更好的是，他可以往前翻页！</li>
+<li>head：只看头几行；-n+数字</li>
+<li>tail：只看尾巴几行</li>
+<li>ln：创建连接；默认硬链接（inode 节点号相同），-s 软连接</li>
+</ul>
+<p>上传文件到linux服务器：<code>scp .\id_rsa.pub root@101.35.119.69:~/.ssh/id_rsa.pub</code></p>
+<p>下载：<code>wget -P /home/sofice http://cn.wordpress.org/wordpress-3.1-zh_CN.zip </code></p>
+<h2 id="4、磁盘"><a href="#4、磁盘" class="headerlink" title="4、磁盘"></a>4、磁盘</h2><ul>
+<li>df：整体磁盘使用量；-h KBytes，-H 1024进制，-T文件系统类型，-i inode数量</li>
+<li>du：目录下磁盘空间使用量；-s 总量，-m MBytes</li>
+<li>mount：挂载；<code>mount /dev/hdc6 /mnt/hdc6</code></li>
+<li>umount：卸载；</li>
+</ul>
+<h2 id="5、进程与服务"><a href="#5、进程与服务" class="headerlink" title="5、进程与服务"></a>5、进程与服务</h2><ul>
+<li><p>ps：进程信息；-u 用户信息，-x 后台参数， <code>ps -aux|grep python</code>，<code>ps -ef</code>查看父进程</p>
+</li>
+<li><p>netstat -anp：端口信息；</p>
+</li>
+<li><p>jps：启动的任务及端口；</p>
+</li>
+<li><p>pstree：进程树；-p 父id，-u 用户组，<code>pstree -pu</code></p>
+</li>
+<li><p>kill：结束进程；<code>kill -9 PID</code></p>
+</li>
+<li><p>whereis：进程位置；</p>
+</li>
+<li><p>systemctl：服务管理；</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 启动服务</span></span><br><span class="line">systemctl redis start</span><br><span class="line"><span class="comment"># 停止服务</span></span><br><span class="line">systemctl redis stop</span><br><span class="line"><span class="comment"># 开机自启</span></span><br><span class="line">systemctl <span class="built_in">enable</span> redis</span><br><span class="line">systemctl <span class="built_in">disable</span> redis</span><br><span class="line"><span class="comment"># 查看状态</span></span><br><span class="line">systemctl status redis</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>curl：测试服务；<code>curl localhost:8080</code></p>
+</li>
+</ul>
+<h2 id="6、系统状况"><a href="#6、系统状况" class="headerlink" title="6、系统状况"></a>6、系统状况</h2><ul>
+<li>uname：操作系统的发行版号； <code>uname -a</code> </li>
+<li>free：查看内存使用；<code>free -h</code></li>
+</ul>
+<h1 id="door-Linux简介"><a href="#door-Linux简介" class="headerlink" title=":door: Linux简介"></a>:door: Linux简介</h1><p>Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX（可移植操作系统接口） 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。</p>
+<p>Linux 继承了 Unix 以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="http://mdimg.sofice.top/202112111341033.jpg"
+                      style="zoom: 50%;" 
+                >
+
+<p>CentOS是一款流行的开源Linux发行版，是RHEL（Red Hat Enterprise Linux）源代码经过再编译而成。</p>
+<p>通常服务器使用 <strong>LAMP</strong>（Linux + Apache + MySQL + PHP）或 <strong>LNMP</strong>（Linux + Nginx+ MySQL + PHP）组合。</p>
+<p>man + 命令：查看命令使用手册</p>
+<p>linux加载配置文件顺序：&#x2F;etc&#x2F;profile → &#x2F;etc&#x2F;profile.d&#x2F;*.sh → ~&#x2F;.bash_profile → ~&#x2F;.bashrc → [&#x2F;etc&#x2F;bashrc]</p>
+<p>&#x3D;&#x3D;centos改颜色&#x3D;&#x3D;：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在/etc/bashrc 最后加上</span></span><br><span class="line"><span class="built_in">export</span> PS1=<span class="string">&quot;\[\e[32;1m\]\u\[\e[33;1m\]@\[\e[35;1m\]\h \[\e[0m\]\w\$&quot;</span></span><br><span class="line"><span class="comment"># 激活环境</span></span><br><span class="line"><span class="built_in">source</span> /etc/bashrc</span><br></pre></td></tr></table></figure>
+
+<p>&#x3D;&#x3D;ssh公钥位置&#x3D;&#x3D;：将公钥id_rsa.pub导入 <code>~/.ssh/authorized_keys</code>；并更改权限<code>chmod 600 ~/.ssh/authorized_keys</code>，<code>chmod 700 ~/.ssh</code></p>
+<h1 id="file-folder-文件及目录"><a href="#file-folder-文件及目录" class="headerlink" title=":file_folder: 文件及目录"></a>:file_folder: 文件及目录</h1><h2 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h2><p>文件类型权限，链接数，拥有者，用户组，大小，最后修改时间，文件名</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="http://mdimg.sofice.top/202112111341634.png"
+                      alt="image-20211209202246424"
+                ></p>
+<p><strong>文件类型权限</strong></p>
+<p>文件类型：【d】目录、【-】文件、【l】连接、【b】存储设备、【c】串行端口设备</p>
+<p>权限权值：r：4，w：2，x：1</p>
+<h2 id="文件与目录"><a href="#文件与目录" class="headerlink" title="文件与目录"></a>文件与目录</h2><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="http://mdimg.sofice.top/202112111341800.jpg"
+                      style="zoom:50%;" 
+                >
+
+<p><strong>以下是对这些目录的解释：</strong></p>
+<ul>
+<li><p><strong>&#x2F;bin</strong>：bin是Binary的缩写, 这个目录存放着最经常使用的命令。</p>
+</li>
+<li><p><strong>&#x2F;boot：</strong> 这里存放的是启动Linux时使用的一些核心文件，包括一些连接文件以及镜像文件。</p>
+</li>
+<li><p><strong>&#x2F;dev ：</strong> dev是Device(设备)的缩写, 存放的是Linux的外部设备，在Linux中访问设备的方式和访问文件的方式是相同的。</p>
+</li>
+<li><p>&#x3D;&#x3D;<strong>&#x2F;etc</strong>&#x3D;&#x3D;：这个目录用来存放所有的系统管理所需要的配置文件和子目录。</p>
+<p>【&#x2F;etc&#x2F;passwd】用户信息</p>
+<p>【&#x2F;etc&#x2F;shadow】密码</p>
+<p>【&#x2F;etc&#x2F;group】用户组信息</p>
+<p>【&#x2F;etc&#x2F;profile】【&#x2F;etc&#x2F;profile.d&#x2F;*.sh】环境变量</p>
+</li>
+<li><p>&#x3D;&#x3D;<strong>&#x2F;home</strong>&#x3D;&#x3D;：用户的主目录，在Linux中，每个用户都有一个自己的目录，一般该目录名是以用户的账号命名的。</p>
+</li>
+<li><p><strong>&#x2F;lib</strong>：这个目录里存放着系统最基本的动态连接共享库，其作用类似于Windows里的DLL文件。</p>
+</li>
+<li><p><strong>&#x2F;lost+found</strong>：这个目录一般情况下是空的，当系统非法关机后，这里就存放了一些文件。</p>
+</li>
+<li><p><strong>&#x2F;media</strong>：linux系统会自动识别一些设备，例如U盘、光驱等等，当识别后，linux会把识别的设备挂载到这个目录下。</p>
+</li>
+<li><p><strong>&#x2F;mnt</strong>：系统提供该目录是为了让用户临时挂载别的文件系统的，我们可以将光驱挂载在&#x2F;mnt&#x2F;上，然后进入该目录就可以查看光驱里的内容了。</p>
+</li>
+<li><p>&#x3D;&#x3D;<strong>&#x2F;opt</strong>&#x3D;&#x3D;：这是给主机额外安装软件所摆放的目录。比如安装maven，mysql等</p>
+</li>
+<li><p><strong>&#x2F;proc</strong>：这个目录是一个虚拟的目录，它是系统内存的映射，我们可以通过直接访问这个目录来获取系统信息。</p>
+</li>
+<li><p><strong>&#x2F;root</strong>：该目录为系统管理员，也称作超级权限者的用户主目录。</p>
+</li>
+<li><p><strong>&#x2F;sbin</strong>：s就是Super User的意思，这里存放的是系统管理员使用的系统管理程序。</p>
+</li>
+<li><p><strong>&#x2F;srv</strong>：该目录存放一些服务启动之后需要提取的数据。</p>
+</li>
+<li><p><strong>&#x2F;sys</strong>：这是linux2.6内核的一个很大的变化。该目录下安装了2.6内核中新出现的一个文件系统 sysfs 。</p>
+</li>
+<li><p><strong>&#x2F;tmp</strong>：这个目录是用来存放一些临时文件的。</p>
+</li>
+<li><p><strong>&#x2F;usr</strong>：这是一个非常重要的目录，用户的很多应用程序和文件都放在这个目录下，类似于windows下的program files目录。</p>
+</li>
+<li><p><strong>&#x2F;usr&#x2F;bin：</strong> 系统预装的可执行程序，会随着系统升级而改变。</p>
+</li>
+<li><p><strong>&#x2F;usr&#x2F;sbin：</strong> 超级用户使用的比较高级的管理程序和系统守护程序。</p>
+</li>
+<li><p><strong>&#x2F;usr&#x2F;src：</strong> 内核源代码默认的放置目录。</p>
+</li>
+<li><p><strong>&#x2F;usr&#x2F;local&#x2F;bin</strong>：用户放置自己的可执行程序的地方，不会被系统升级而覆盖同名文件。</p>
+</li>
+<li><p><strong>&#x2F;var</strong>：这个目录中存放着在不断扩充着的东西，我们习惯将那些经常被修改的目录放在这个目录下。包括各种日志文件。</p>
+</li>
+<li><p><strong>&#x2F;run</strong>：是一个临时文件系统，存储系统启动以来的信息。当系统重启时，这个目录下的文件应该被删掉或清除。</p>
+</li>
+<li><p><strong>&#x2F;www</strong>：存放服务器网站相关资源，环境及项目</p>
+</li>
+</ul>
+<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="http://mdimg.sofice.top/202112111341471.jpg"
+                      style="zoom:50%;" 
+                >
+
+<p><strong>命令模式：</strong></p>
+<p>用户刚刚启动 vi&#x2F;vim，便进入了命令模式。</p>
+<p>常用的几个命令：</p>
+<ul>
+<li><strong>i</strong> 前面插入，a 后面插入，o下一新行</li>
+<li><strong>x</strong> 删除当前光标所在处的字符</li>
+<li><strong>:</strong> 切换到底线命令模式，以在最底一行输入命令。</li>
+</ul>
+<p><strong>输入模式：</strong></p>
+<p>在输入模式中，可以使用以下按键：</p>
+<ul>
+<li><strong>字符按键以及Shift组合</strong>，输入字符</li>
+<li><strong>ENTER</strong>，回车键，换行</li>
+<li><strong>BACK SPACE</strong>，退格键，删除光标前一个字符</li>
+<li><strong>DEL</strong>，删除键，删除光标后一个字符</li>
+<li><strong>方向键</strong>，在文本中移动光标</li>
+<li><strong>HOME</strong>&#x2F;<strong>END</strong>，移动光标到行首&#x2F;行尾</li>
+<li><strong>Page Up</strong>&#x2F;<strong>Page Down</strong>，上&#x2F;下翻页</li>
+<li><strong>Insert</strong>，切换光标为输入&#x2F;替换模式，光标将变成竖线&#x2F;下划线</li>
+<li><strong>ESC</strong>，退出输入模式，切换到命令模式</li>
+</ul>
+<p><strong>底线命令模式</strong></p>
+<p>在命令模式下按下:（英文冒号）就进入了底线命令模式。</p>
+<p>底线命令模式可以输入单个或多个字符的命令，可用的命令非常多。</p>
+<p>在底线命令模式中，基本的命令有（已经省略了冒号）：</p>
+<ul>
+<li>q 退出程序</li>
+<li>w 保存文件</li>
+</ul>
+<p>按ESC键可随时退出底线命令模式。</p>
+<h2 id="磁盘管理"><a href="#磁盘管理" class="headerlink" title="磁盘管理"></a>磁盘管理</h2><p>根文件系统之外的其他文件要想能够被访问，都必须通过“关联”至根文件系统上的某个目录来实现，此关联操作即为“挂载”，此目录即为“挂载点”,解除此关联关系的过程称之为“卸载”</p>
+<h2 id="文件压缩"><a href="#文件压缩" class="headerlink" title="文件压缩"></a>文件压缩</h2><h1 id="shell-Shell"><a href="#shell-Shell" class="headerlink" title=":shell: Shell"></a>:shell: Shell</h1><p>用户登录后，要启动一个进程，负责将用户的操作传给内核，这个进程是用户登录到系统后运行的命令解释器或某个特定的程序，即Shell。Shell是用户与Linux系统之间的接口。Linux的Shell有许多种，每种都有不同的特点。常用的有sh(Bourne Shell), csh(C Shell), ksh(Korn Shell), tcsh(TENEX&#x2F;TOPS-20 type C Shell), <strong>bash</strong>(Bourne Again Shell)等。</p>
+<p>系统管理员可以根据系统情况和用户习惯为用户指定某个Shell。如果不指定Shell，那么系统使用sh为默认的登录Shell，即这个字段的值为&#x2F;bin&#x2F;sh。</p>
+<p>利用这一特点，我们可以限制用户只能运行指定的应用程序，在该应用程序运行结束后，用户就自动退出了系统。有些Linux 系统要求只有那些在系统中登记了的程序才能出现在这个字段中。</p>
+<h2 id="BASH"><a href="#BASH" class="headerlink" title="BASH"></a>BASH</h2><h2 id="正则表达式与文件格式化"><a href="#正则表达式与文件格式化" class="headerlink" title="正则表达式与文件格式化"></a>正则表达式与文件格式化</h2><h2 id="shell脚本"><a href="#shell脚本" class="headerlink" title="shell脚本"></a>shell脚本</h2><h1 id="person-frowning-使用者管理"><a href="#person-frowning-使用者管理" class="headerlink" title=":person_frowning: 使用者管理"></a>:person_frowning: 使用者管理</h1><p><a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/sam305415304/article/details/105513451/?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=xshell%20ssh%20%E9%9D%9Eroot&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-105513451.first_rank_v2_pc_rank_v29&amp;spm=1018.2226.3001.4187" >https://blog.csdn.net/sam305415304/article/details/105513451/?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=xshell%20ssh%20%E9%9D%9Eroot&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-105513451.first_rank_v2_pc_rank_v29&amp;spm=1018.2226.3001.4187<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="账号管理"><a href="#账号管理" class="headerlink" title="账号管理"></a>账号管理</h2><p>用户信息【&#x2F;etc&#x2F;passwd】，密码【&#x2F;etc&#x2F;shadow】</p>
+<p>增加用户账号就是在&#x2F;etc&#x2F;passwd文件中为新用户增加一条记录，同时更新其他系统文件如&#x2F;etc&#x2F;shadow, &#x2F;etc&#x2F;group等。</p>
+<p>UID 用户标识号</p>
+<p>$ 表示普通用户，# 表示root用户</p>
+<p><strong>伪用户（pseudo users）</strong></p>
+<p>这些用户在&#x2F;etc&#x2F;passwd文件中也占有一条记录，但是不能登录，因为它们的登录Shell为空。它们的存在主要是方便系统管理，满足相应的系统进程对文件属主的要求。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">bin 拥有可执行的用户命令文件</span><br><span class="line">sys 拥有系统文件</span><br><span class="line">adm 拥有帐户文件</span><br><span class="line">uucp UUCP使用</span><br><span class="line">lp lp或lpd子系统使用</span><br><span class="line">nobody NFS使用</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>添加sudo权限</strong></p>
+<p>visudo 命令是用来编辑修改【&#x2F;etc&#x2F;sudoers】，加入一行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sofice  ALL=(ALL)    ALL </span><br></pre></td></tr></table></figure>
+
+<h2 id="用户组管理"><a href="#用户组管理" class="headerlink" title="用户组管理"></a>用户组管理</h2><p>用户组信息【&#x2F;etc&#x2F;group】</p>
+<p>GID 用户组标识号</p>
+<h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><p>PID进程标识号</p>
+<h2 id="包管理"><a href="#包管理" class="headerlink" title="包管理"></a>包管理</h2><h3 id="rpm"><a href="#rpm" class="headerlink" title="rpm"></a>rpm</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">RPM包格式：name-version.type.rpm  软件名-版本号.包类型.rpm</span><br><span class="line">安装：rpm -i /PATH/TO/RPM包名全称</span><br><span class="line">卸载：rpm -e --nodeps RPM包名 //--nodeps 强制跳过依赖卸载</span><br><span class="line">升级：rpm -U RPM包名</span><br><span class="line">查询：rpm [参数] RPM包名</span><br><span class="line">常用参数：</span><br><span class="line">        rpm -vh                    //显示安装进度</span><br><span class="line">        rpm -qa                    //查询系统中安装的所有RPM软件包</span><br><span class="line">        rpm -q RPM包名             //查询指定软件包是否已安装</span><br><span class="line">        rpm -qp RPM包文件名         //查询包中文件信息，安装前了解软件包中信息</span><br><span class="line">        rpm -qi RPM包名            //查询系统中已安装包的描述信息</span><br><span class="line">        rpm -ql RPM包名            //查询系统中已安装包里所包含的文件</span><br><span class="line">        rpm -qf RPM包名            //查询系统中指定文件所属的软件包</span><br><span class="line">        rpm -qa | grep php         //检索系统中已经安装有关php的软件包</span><br><span class="line">        rpm --noscript             //不安装脚本</span><br><span class="line">        rpm --nosignature          //不检查合法来源</span><br><span class="line">        rpm --nodigest             //不检查完整性</span><br><span class="line">验证：rpm -V [参数]</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="tar"><a href="#tar" class="headerlink" title="tar"></a>tar</h3><p>Unix和类Unix系统上的压缩打包工具，可以将多个文件合并为一个文件，打包后的文件后缀亦为“tar”。tar文件格式已经成为POSIX标准，最初是POSIX.1-1988，当前是POSIX.1-2001。本程序最初的设计目的是将文件备份到磁带上（tape archive），因而得名tar。<br>tar命令是Unix&#x2F;Linux系统中备份文件的可靠方法，几乎可以工作于任何环境中，它的使用权限是所有用户。</p>
+<p>tar代表未压缩的tar文件。已压缩的tar文件则附加压缩文件的扩展名，如经过gzip压缩后的tar文件，扩展名为“.tar.gz”</p>
+<pre><code>建立TAR包：将多个文件或目录打包成一个文件
+tar -cvf TAR包名.tar /PATH/TO/&lt;文件或目录名&gt;　　 //只打包不压缩 
+tar -zcvf TAR包名.gz /PATH/TO/&lt;文件或目录名&gt; 　　//将指定目录或文件打包后压缩，指定压缩格式为gz
+tar -jcvf TAR包名.bzip2 /PATH/TO/&lt;文件或目录名&gt; 　　//将指定目录或文件打包后压缩，指定压缩格式为bzip2
+tar -Jkc --level=9 -f TAR包名.xz /PATH/TO/&lt;文件或目录名&gt;    //将指定目录或文件打包后压缩，指定压缩格式为XZ,压缩级别为9（默认为6），并且强制执行,压缩后保留源文件
+
+查询TAR包中内容
+tar -tf /PATH/TO/TAR包名.tar
+tar -ztf /PATH/TO/TAR包名.tar.gz
+tar -tvf /PATH/TO/TAR包名.tar.xz
+
+释放TAR包
+tar -xvf /PATH/TO/TAR包名.tar
+tar -zxvf /PATH/TO/TAR包名.gz
+tar -xvf /PATH/TO/TAR包名.xz -C /newpath/    //将压缩包解压到指定的目录,通用的解压缩格式
+</code></pre>
+<h3 id="yum"><a href="#yum" class="headerlink" title="yum"></a>yum</h3><p>Yum（全称为 Yellow dog Updater, Modified）是一个在Fedora和RedHat以及CentOS中的Shell前端软件包管理器。基于RPM包管理，能够从指定的服务器自动下载RPM包并且安装，可以自动处理依赖性关系，并且一次安装所有依赖的软件包，无须繁琐地一次次下载、安装。</p>
+<p>yum 配置文件默认目录位置为 【&#x2F;etc&#x2F;yum.repos.d】</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum -y install 包名   -y所有的提示都为y</span><br><span class="line">yum remove 包名       卸载</span><br></pre></td></tr></table></figure>
+
+<h4 id="修改yum源"><a href="#修改yum源" class="headerlink" title="修改yum源"></a>修改yum源</h4><ol>
+<li><p>备份</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mv</span> /etc/yum.repos.d/CentOS-AppStream.repo.repo /etc/yum.repos.d/CentOS-AppStream.repo.bak</span><br><span class="line"><span class="built_in">mv</span> /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak</span><br><span class="line"><span class="built_in">mv</span> /etc/yum.repos.d/CentOS-centosplus.repo.repo /etc/yum.repos.d/CentOS-centosplus.repo.bak</span><br><span class="line"><span class="built_in">mv</span> /etc/yum.repos.d/CentOS-Devel.repo.repo /etc/yum.repos.d/CentOS-Devel.repo.bak</span><br><span class="line"><span class="built_in">mv</span> /etc/yum.repos.d/CentOS-Epel.repo.backup /etc/yum.repos.d/CentOS-Epel.repo.bak</span><br><span class="line"><span class="built_in">mv</span> /etc/yum.repos.d/CentOS-Extras.repo.backup /etc/yum.repos.d/CentOS-Extras.repo.bak</span><br><span class="line"><span class="built_in">mv</span> /etc/yum.repos.d/CentOS-HA.repo /etc/yum.repos.d/CentOS-HA.repo.bak</span><br><span class="line"><span class="built_in">mv</span> /etc/yum.repos.d/CentOS-PowerTools.repo /etc/yum.repos.d/CentOS-PowerTools.repo.bak</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>下载新的 <code>http://mirrors.aliyun.com/repo/Centos-8.repo</code>,并命名为<code>CentOS-Base.repo</code></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-8.repo</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>清除缓存</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum clean all     <span class="comment"># 清除系统所有的yum缓存</span></span><br><span class="line">yum makecache     <span class="comment"># 生成yum缓存</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+
+        </div>
+
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/Linux/">#Linux</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/08/11/8.%E5%92%8C%E5%B0%8F%E8%BE%BE%E4%B8%80%E8%B5%B7%E5%AD%A6JSON/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">8.和小达一起学JSON</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2022/08/11/9.%E5%92%8C%E5%B0%8F%E8%BE%BE%E4%B8%80%E8%B5%B7%E5%AD%A6Nodejs/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">9.和小达一起学Node.js</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Eddie</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        访问人数&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        总访问量&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+            <li class="tools-item rss flex-center">
+                <a class="flex-center"
+                   href="/atom.xml"
+                   target="_blank"
+                >
+                    <i class="fas fa-rss"></i>
+                </a>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-text">:+1: 常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E6%9D%83%E9%99%90"><span class="nav-text">1、权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E7%9B%AE%E5%BD%95"><span class="nav-text">2、目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E6%96%87%E4%BB%B6"><span class="nav-text">3、文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E7%A3%81%E7%9B%98"><span class="nav-text">4、磁盘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E3%80%81%E8%BF%9B%E7%A8%8B%E4%B8%8E%E6%9C%8D%E5%8A%A1"><span class="nav-text">5、进程与服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6%E3%80%81%E7%B3%BB%E7%BB%9F%E7%8A%B6%E5%86%B5"><span class="nav-text">6、系统状况</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#door-Linux%E7%AE%80%E4%BB%8B"><span class="nav-text">:door: Linux简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#file-folder-%E6%96%87%E4%BB%B6%E5%8F%8A%E7%9B%AE%E5%BD%95"><span class="nav-text">:file_folder: 文件及目录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="nav-text">文件权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95"><span class="nav-text">文件与目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vim"><span class="nav-text">Vim</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86"><span class="nav-text">磁盘管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E5%8E%8B%E7%BC%A9"><span class="nav-text">文件压缩</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#shell-Shell"><span class="nav-text">:shell: Shell</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#BASH"><span class="nav-text">BASH</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8E%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="nav-text">正则表达式与文件格式化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell%E8%84%9A%E6%9C%AC"><span class="nav-text">shell脚本</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#person-frowning-%E4%BD%BF%E7%94%A8%E8%80%85%E7%AE%A1%E7%90%86"><span class="nav-text">:person_frowning: 使用者管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%A6%E5%8F%B7%E7%AE%A1%E7%90%86"><span class="nav-text">账号管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%86"><span class="nav-text">用户组管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="nav-text">进程管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%85%E7%AE%A1%E7%90%86"><span class="nav-text">包管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#rpm"><span class="nav-text">rpm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tar"><span class="nav-text">tar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#yum"><span class="nav-text">yum</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9yum%E6%BA%90"><span class="nav-text">修改yum源</span></a></li></ol></li></ol></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/dark-light-toggle.js"></script>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/local-search.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/code-copy.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/lazyload.js"></script>
+
+
+<div class="post-scripts pjax">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/left-side-toggle.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/toc.js"></script>
+    
+</div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
